@@ -8,12 +8,14 @@ import { connectDB } from "./db/database.js";
 // import { createItem } from "./controller/createConfig.js";
 
 import termsRouter from "./routes/terms.js";
+import productRouter from "./routes/products.js";
+
 import { createProduct } from "./controller/createProduct.js";
 
 const app = express();
 
 app.use(cors({
-    origin: 'https://lettfakture.vercel.app'
+    origin: ['https://lettfakture-fcqfkfz95-harshals-projects-406ba5fa.vercel.app','http://localhost:5173']
 }));
 
 connectDB();
@@ -48,7 +50,8 @@ function createRandomProducts() {
 
 const port = process.env.PORT || 5000;
 
-app.use('/api', termsRouter);
+app.use('/api/config', termsRouter);
+app.use('/api/products', productRouter);
 
 app.listen(port, () => {
     console.log(`Server Running on port ${port}`)

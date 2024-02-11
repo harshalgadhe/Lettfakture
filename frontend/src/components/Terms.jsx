@@ -8,10 +8,9 @@ import axios from 'axios';
 async function getTerms(){
   let data;
 
-  await axios.get('http://127.0.0.1:5003/api/terms')
+  await axios.get('http://127.0.0.1:5003/api/config/terms')
   .then(response => {
     data = response.data.value;
-    return data;
   })
   .catch(error => {
     console.error('There was a problem while retrieving terms:', error);

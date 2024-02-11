@@ -9,8 +9,8 @@ function PriceList() {
   return (
     <>
         <DashboardNav />
-        <Container className="d-flex direction-column p-0 m-0">
-            <Container className="col-2 p-0">
+        <Container className="d-flex direction-column p-0 m-0 position-relative">
+            <Container className="col-2 p-0 ">
                 <Sidebar/>
             </Container>
             <Container className="p-0">
