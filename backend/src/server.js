@@ -15,7 +15,7 @@ import { createProduct } from "./controller/createProduct.js";
 const app = express();
 
 app.use(cors({
-    origin: ['https://lettfakture-fcqfkfz95-harshals-projects-406ba5fa.vercel.app','http://localhost:5173']
+    origin: ['https://lettfakture-fcqfkfz95-harshals-projects-406ba5fa.vercel.app','https://lettfakture.vercel.app','http://localhost:5173']
 }));
 
 connectDB();
