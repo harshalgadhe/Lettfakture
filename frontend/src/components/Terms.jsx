@@ -8,7 +8,7 @@ import axios from 'axios';
 async function getTerms(){
   let data;
 
-  await axios.get('http://127.0.0.1:5003/api/config/terms')
+  await axios.get('https://lettfakture-production.up.railway.app/api/config/terms')
   .then(response => {
     data = response.data.value;
   })

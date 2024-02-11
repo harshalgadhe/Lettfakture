@@ -6,7 +6,7 @@ let syncChanges = true;
 
 async function getAllProducts(){
   let data;
-  await axios.get('http://127.0.0.1:5003/api/products/get_all')
+  await axios.get('https://lettfakture-production.up.railway.app/api/products/get_all')
   .then(response => {
     data = response.data;
     console.log(data)
