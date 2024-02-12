@@ -7,7 +7,6 @@ import brandImage from '/image/diamond.png';
 function DashboardNav() {
   return (
     <div>
-      {/* Top bar */}
       <Navbar bg="primary" variant="dark">
         <Container className='w-75 py-2'>
           <Navbar.Brand href="#home" className="d-none d-xl-block">
