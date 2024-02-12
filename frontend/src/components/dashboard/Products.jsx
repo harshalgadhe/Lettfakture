@@ -101,7 +101,7 @@ function Products() {
               <Modal show={show} onHide={handleClose} dialogClassName="modal-custom">
                 <Modal.Header closeButton className='border-0'>
                 </Modal.Header>
-                <div className='p-5 pt-3'>
+                <div className='p-3 px-sm-5 py-sm-3 pt-3'>
                   <h2 className='text-danger text-center mb-4'>New Product</h2>
                   <Form onSubmit={submitHandler}>
                     <Form.Group className="mb-3">
@@ -130,11 +130,11 @@ function Products() {
                     </Form.Group>
 
                     <div className='d-flex flex-column align-items-center'>
-                      <Button variant="primary"  className='px-4 rounded-5' type='submit'>
-                        Submit
+                      <Button variant="primary"  className='px-4 rounded-5 fw-semibold' type='submit'>
+                        <span >Save</span>
                       </Button>
                       <Button variant="transparent" className=" mt-2 text-primary fw-semibold" onClick={handleClose}>
-                        Close
+                        <span >Close</span>
                       </Button>
                     </div>
                   </Form>

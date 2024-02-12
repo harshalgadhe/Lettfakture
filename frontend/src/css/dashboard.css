@@ -24,8 +24,8 @@
 
 .modal-custom {
     margin-top: 80px;
-    max-width: 50%;
-  }
+    max-width: 620px;
+}
 
 .modal-content {
     border-radius: 30px !important;
@@ -39,5 +39,11 @@
 @media (max-width: 796px) {
     #product_container {
         margin-top:180px;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-custom {
+        max-width: 95%;
     }
 }
