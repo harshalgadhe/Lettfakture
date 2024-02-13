@@ -14,13 +14,13 @@ let cnt = 0;
 function appendData(data){
   const productBody = document.getElementById('product_body');
   data.forEach(element => {
-    productBody.innerHTML += (`<div class='d-flex' id='${element.id}'>
+    productBody.innerHTML = (`<div class='d-flex' id='${element.id}'>
     <div class='col-xl-3 col-8 px-2'><div class="product_item border border-1 border-info rounded-5 p-1 ps-2">${element.product}</div></div>
     <div class='col-xl-2 px-2 d-none d-xl-block'><div class="product_item border border-1 border-info rounded-5 p-1 ps-2">${element.in_price}</div></div>
     <div class='col-xl-2 col-4 px-2'><div class="product_item border border-1 border-info rounded-5 p-1 ps-2">${element.price}</div></div>
     <div class='col-xl-2 px-2 d-none d-xl-block'><div class="product_item border border-1 border-info rounded-5 p-1 ps-2">${element.stock}</div></div>
     <div class='col-xl-3 px-2 d-none d-xl-block'><div class="product_item border border-1 border-info rounded-5 p-1 ps-2">${element.description}</div></div>
-  </div>`)
+  </div>`) + productBody.innerHTML;
   });
 }
 
@@ -111,17 +111,17 @@ function Products() {
 
                     <Form.Group className="mb-3">
                       <Form.Label>In Price</Form.Label>
-                      <Form.Control className="rounded-5" type="text" id="in_price" placeholder="Enter in price" />
+                      <Form.Control className="rounded-5" type="number" id="in_price" placeholder="Enter in price" />
                     </Form.Group>
 
                     <Form.Group className="mb-3">
                       <Form.Label>Price</Form.Label>
-                      <Form.Control className="rounded-5" type="text" id="price" placeholder="Enter price" />
+                      <Form.Control className="rounded-5" type="number" id="price" placeholder="Enter price" />
                     </Form.Group>
 
                     <Form.Group className="mb-3">
                       <Form.Label>In Stock</Form.Label>
-                      <Form.Control className="rounded-5" type="text" id="stock" placeholder="Enter stock" />
+                      <Form.Control className="rounded-5" type="number" id="stock" placeholder="Enter stock" />
                     </Form.Group>
 
                     <Form.Group className="mb-3">

@@ -18,19 +18,12 @@ import {
   IconLogout
 } from '@tabler/icons-react';
 
-function Sidebar() {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+function Sidebar({ showSidebar, handleSidebarClose }) {
   
     return (
       <>
-        <Button variant="primary" className="d-xl-none" onClick={handleShow}>
-          Launch
-        </Button>
   
-        <Offcanvas show={show} onHide={handleClose} responsive="xl">
+        <Offcanvas show={showSidebar} onHide={handleSidebarClose} responsive="xl">
           <Offcanvas.Header closeButton>
           </Offcanvas.Header>
           <Offcanvas.Body>

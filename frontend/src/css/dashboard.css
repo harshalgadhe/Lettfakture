@@ -38,12 +38,21 @@
 }
 @media (max-width: 796px) {
     #product_container {
-        margin-top:180px;
+        margin-top:190px;
     }
 }
 
 @media (max-width: 600px) {
     .modal-custom {
         max-width: 95%;
+    }
+}
+
+@media (max-width: 260px) {
+    #product_container {
+        font-size: 11px;
+    }
+    .product_item{
+        padding-left: 5px !important;
     }
 }
