@@ -42,9 +42,13 @@ function Terms() {
         <AppNavbar />
         <div className='text-white d-flex flex-column mt-5 align-items-center'>
           <h2>Terms</h2>
-          <Button className="mt-3 px-5 py-3 fw-bold fs-5 text-white rounded-pill" style={buttonStyle}>Close and Go Back</Button>
+          <div className='mt-3'>
+            <Button className="px-5 py-3 fw-bold fs-5 text-white rounded-pill" style={buttonStyle}>Close and Go Back</Button>
+          </div>
           <div className='bg-white text-black p-5 m-5 rounded-4 text-center' style={{ maxWidth:"750px" }} id="terms" />
-          <Button className="px-5 py-3 fw-bold fs-5 text-white rounded-pill mb-5" style={buttonStyle}>Close and Go Back</Button>
+          <div className='mb-5'>
+            <Button className="px-5 py-3 fw-bold fs-5 text-white mb-5 rounded-pill" style={buttonStyle}>Close and Go Back</Button>
+          </div>
         </div>
       </div>
     </div>
