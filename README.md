@@ -11,6 +11,3 @@ You need to have Node installed to run this service locally:
   a. cd backend
   b. npm install
   c. npm run start
-
-
-Since the Server/ Frontend URL is hardcoded to the production website. The server won't send the data to frontend.
