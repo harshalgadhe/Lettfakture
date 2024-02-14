@@ -1,5 +1,6 @@
 import Sequelize from 'sequelize';
 
+// Creating sequlize object to connect with our DB
 export const sq = new Sequelize("pkefkomf", "pkefkomf", "KHcLs9iUMjuQgKEnzcPxwVGlYK6XAQqC", {
     host: "lucky.db.elephantsql.com",
     dialect: 'postgres', 
